@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=3 uid="uid://bdaaitudq7jjx"]
+
+[ext_resource type="Script" path="res://scripts/bal.gd" id="1_3qmu6"]
+[ext_resource type="FontFile" uid="uid://dl142w6vhrqav" path="res://fonts/Yes Free.ttf" id="2_r66h3"]
+[ext_resource type="Texture2D" uid="uid://c0ie7po8eosm4" path="res://images/718G6-sffeL-removebg-preview.png" id="3_0bjfb"]
+[ext_resource type="Texture2D" uid="uid://d2b3isdyt2rck" path="res://images/pngimg.com - question_mark_PNG7.png" id="4_0wmyw"]
+[ext_resource type="Texture2D" uid="uid://doj1y1a7jwc04" path="res://images/purepng.com-playing-cardsplaying-cardheavy-papercardboardplastic-coatedthin-plastic-1421526492868w7dtj.png" id="5_22iy4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="bal" type="Button" parent="."]
+offset_right = 937.0
+offset_bottom = 1073.0
+flat = true
+script = ExtResource("1_3qmu6")
+
+[node name="jobb" type="Button" parent="."]
+offset_left = 977.0
+offset_right = 1914.0
+offset_bottom = 1073.0
+flat = true
+
+[node name="vagy" type="Label" parent="."]
+offset_left = 802.0
+offset_top = 467.0
+offset_right = 1140.0
+offset_bottom = 608.0
+rotation = -0.0351082
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_r66h3")
+theme_override_font_sizes/font_size = 150
+text = "Vagy"
+
+[node name="empty pack" type="Sprite2D" parent="."]
+position = Vector2(457, 570)
+scale = Vector2(1.66203, 1.79353)
+texture = ExtResource("3_0bjfb")
+
+[node name="random" type="Label" parent="."]
+offset_left = 207.0
+offset_top = 306.0
+offset_right = 711.0
+offset_bottom = 447.0
+rotation = -0.318928
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_r66h3")
+theme_override_font_sizes/font_size = 110
+text = "RANDOM"
+
+[node name="qmark" type="Sprite2D" parent="."]
+position = Vector2(578, 335)
+rotation = 1.11186
+scale = Vector2(0.291988, 0.262045)
+texture = ExtResource("4_0wmyw")
+
+[node name="card" type="Sprite2D" parent="."]
+position = Vector2(1525, 519)
+scale = Vector2(0.404267, 0.454968)
+texture = ExtResource("5_22iy4")
+
+[node name="deck" type="Label" parent="."]
+offset_left = 1569.0
+offset_top = 476.0
+offset_right = 2073.0
+offset_bottom = 617.0
+rotation = -0.318928
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_r66h3")
+theme_override_font_sizes/font_size = 150
+text = "DECK"
+
+[connection signal="pressed" from="bal" to="bal" method="_on_pressed"]

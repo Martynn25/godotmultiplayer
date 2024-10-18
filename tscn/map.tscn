@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://driorp88kvsov"]
+
+[ext_resource type="Texture2D" uid="uid://iujykwbttsec" path="res://wooden-dining-table-top-view-realistic-free-vector.jpg" id="1_skytu"]
+[ext_resource type="Texture2D" uid="uid://bb1rei363rq8i" path="res://istockphoto-806894546-612x612.jpg" id="2_lfflf"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Wooden-dining-table-top-view-realistic-free-vector" type="Sprite2D" parent="."]
+position = Vector2(951, 504)
+scale = Vector2(3.7, 5.2)
+texture = ExtResource("1_skytu")
+
+[node name="board" type="Sprite2D" parent="."]
+position = Vector2(647, 488)
+scale = Vector2(1.81373, 1.51675)
+texture = ExtResource("2_lfflf")
