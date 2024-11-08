@@ -9,7 +9,7 @@ const MAX_CLIENTS = 2
 var game_code
 var player_info_name
 var player_info_id
-func _process(delta: float):
+func _process(_delta: float):
 	multiplayer.poll()
 func _ready():
 	multiplayer.connected_to_server.connect(connected_to_server)
@@ -37,6 +37,7 @@ func become_host():
 	player_info_id = multiplayer.get_unique_id()
 	if multiplayer.is_server():
 		print("IM DA SERVER")
+	_add_player_to_game("1")
 func _add_player_to_game(id: String):
 	print("player %s joined the game " % id)
 func _del_player(id: String):
