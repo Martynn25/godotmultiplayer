@@ -71,4 +71,8 @@ theme_override_fonts/font = ExtResource("2_r66h3")
 theme_override_font_sizes/font_size = 150
 text = "DECK"
 
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(950, 550)
+zoom = Vector2(0.6, 0.6)
+
 [connection signal="pressed" from="bal" to="bal" method="_on_pressed"]

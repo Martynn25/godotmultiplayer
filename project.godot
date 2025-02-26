@@ -22,8 +22,6 @@ Gamestate="*res://gamestate.gd"
 
 [display]
 
-window/size/viewport_width=500
-window/size/viewport_height=500
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 window/vsync/vsync_mode=0

@@ -47,4 +47,8 @@ text = "START?"
 flat = true
 script = ExtResource("3_ve642")
 
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(950, 550)
+zoom = Vector2(0.6, 0.6)
+
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
